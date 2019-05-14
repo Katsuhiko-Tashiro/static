@@ -5,7 +5,7 @@
     align-center
   >
     <v-flex>
-        <a href=""> <nuxt-link to="/blog"></nuxt-link> </a>
+        <a href=""> <nuxt-link to="/blog">押してみてね</nuxt-link> </a>
     </v-flex>
   </v-layout>
 </template>
