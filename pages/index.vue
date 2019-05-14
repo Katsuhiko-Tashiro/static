@@ -5,7 +5,7 @@
     align-center
   >
     <v-flex>
-        ;soidhfl;ajs;klfdjaskl;fja;jf
+        <a href=""> <nuxt-link to="/blog"></nuxt-link> </a>
     </v-flex>
   </v-layout>
 </template>
