@@ -40,7 +40,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
+    '@/plugins/vuetify',
+    '@/plugins/gtm'
   ],
 
   /*
@@ -49,7 +50,8 @@ export default {
   modules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-140116780-1'
-    }]
+    }],
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-WXH2X2K', pageTracking: true }]
   ],
 
   /*

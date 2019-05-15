@@ -5,7 +5,14 @@
     align-center
   >
     <v-flex>
-        <a href=""> <nuxt-link to="/blog">押してみてね</nuxt-link> </a>
+        <v-btn @click.stop="onSizeSelected">サイズを選ぶ</v-btn>
+        <v-btn @click.stop="onClickPayment">リクエストをする</v-btn>
+    </v-flex>
+    <v-flex v-if="selected" id="selected">
+        <a href="">サイズを選んだよ</a>
+    </v-flex>
+    <v-flex v-if="requested" id="requested">
+        <a href="">リクエストをしたよ</a>
     </v-flex>
   </v-layout>
 </template>
@@ -18,6 +25,21 @@ export default {
   components: {
     Logo,
     VuetifyLogo
+  },
+  data() {
+    return {
+    selected: false,
+    requested: false
+    }
+  },
+  methods: {
+    onSizeSelected() {
+      this.selected = true
+    },
+    onClickPayment() {
+      this.requested = true
+    }
   }
+
 }
 </script>
